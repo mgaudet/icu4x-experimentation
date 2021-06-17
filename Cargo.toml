@@ -1,0 +1,11 @@
+[package]
+name = "icu4x-experimentation"
+version = "0.1.0"
+authors = ["Matthew Gaudet <mgaudet@mozilla.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+icu_uniset = "0.2.0"
+icu_provider_fs = "0.2.0"
