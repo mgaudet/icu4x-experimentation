@@ -7,6 +7,9 @@ fn main() {
     let set = builder.build();
     println!("Set contains A: {}", set.contains('A'));
 
+    // The icu4x data must have been generated using the echeran/icu4x:cpt-test-using-ppucd branch,
+    // according to the instructions in
+    // https://github.com/echeran/icu4x/blob/cpt-test-using-ppucd/tools/datagen/tests/ppucd_test.rs#L7-L16
     let data_provider = FsDataProvider::try_new("/home/matthew/icu4x-data").expect("Provider");
 
     // So, the old PPCUD parser apparently doesn't yet parse the general category values. So we can't test that yet.
